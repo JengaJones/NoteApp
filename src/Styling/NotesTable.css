@@ -1,0 +1,81 @@
+.notes-table-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow-x: auto;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+td.title-cell {
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}  
+
+td.note-cell {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 500px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    vertical-align: top;
+}  
+
+th:last-child,
+td:last-child {
+    width: 20px;
+    text-align: center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 50px;
+}
+
+th:nth-child(2),
+td.title-cell {
+  width: 200px;
+}
+
+th:nth-child(3),
+td.note-cell {
+  width: 100%;
+}
+
+th:nth-child(4),
+td:last-child {
+  width: 40px; 
+  text-align: center;
+}
+
+
+th {
+    background-color: #f4f4f4;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #888;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+.delete-icon:hover {
+    color: #e74c3c;
+    transform: scale(1.2);
+}
+  
+  

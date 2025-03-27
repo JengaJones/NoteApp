@@ -1,0 +1,51 @@
+.note-form-container {
+    margin: 2rem auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+.inputField {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contentField {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 150px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}  
+
+button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    min-width: 120px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #21a1f1;
+}
+  
